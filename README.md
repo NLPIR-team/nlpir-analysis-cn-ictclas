@@ -18,7 +18,8 @@ Support: MacOS,Linux x86/64, Windows x86/64
 ```
 # Lucene DEMO
 ```java
-    NLPIRTokenizerAnalyzer nta = new NLPIRTokenizerAnalyzer("", 1, "", "", false);
+		//For indexing
+    		NLPIRTokenizerAnalyzer nta = new NLPIRTokenizerAnalyzer("", 1, "", "", false);
 		IndexWriterConfig inconf=new IndexWriterConfig(nta);
 		inconf.setOpenMode(OpenMode.CREATE_OR_APPEND);
 		IndexWriter index=new IndexWriter(FSDirectory.open(Paths.get("index/")),inconf);
@@ -27,7 +28,7 @@ Support: MacOS,Linux x86/64, Windows x86/64
 		index.addDocument(doc);
 		index.flush();
 		index.close();
-		
+		//for searching
 		String field = "contents";
 		IndexReader reader = DirectoryReader.open(FSDirectory.open(Paths.get("index/")));
 		IndexSearcher searcher = new IndexSearcher(reader);
