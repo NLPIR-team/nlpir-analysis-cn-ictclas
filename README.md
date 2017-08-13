@@ -1,5 +1,6 @@
 # nlpir-analysis-cn-ictclas-6.6.0
 The java package of nlpir/ictclas for lucene/solr 6.6.0 plugin.
+
 Support: MacOS,Linux x86/64, Windows x86/64
 
 # DEMO
