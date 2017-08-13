@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/2002/xmlspec/dtd/2.10/xmlspec.dtd">
+<NLPIR>
+	<TagSet>ICTPOS.map</TagSet>
+	<UserDict>on</UserDict>
+	<UserDictPrior>On</UserDictPrior>
+	<FieldDict>on</FieldDict>  
+	<GranularityContorl>on</GranularityContorl>
+	<Log>On</Log>
+	<version>2013</version>
+	<Modify>2012-11-14</Modify>
+	<Lexicon>2012-11-14</Lexicon>
+	<Sentiment>On</Sentiment>
+	<adaptive>true</adaptive>
+	<author>ZhangHuaping</author>
+	<Contact>pipy_zhang@msn.com</Contact>
+</NLPIR>
+
