@@ -8,7 +8,7 @@ import org.apache.lucene.util.AttributeFactory;
 
 public class NLPIRTokenizerFactory extends TokenizerFactory {
 
-	protected NLPIRTokenizerFactory(Map<String, String> args) {
+	public NLPIRTokenizerFactory(Map<String, String> args) {
 		super(args);
 		if (!args.isEmpty()) {
 			throw new IllegalArgumentException("Unknown parameters: " + args);

@@ -41,6 +41,7 @@ public class NLPIRTokenizer extends Tokenizer {
 		try {
 			prop.load(new FileInputStream(new File("nlpir.properties")));
 			data=prop.getProperty("data");
+			System.out.println(data);
 			encoding=Integer.parseInt(prop.getProperty("encoding"));
 			sLicenceCode=prop.getProperty("sLicenceCode");
 			userDict=prop.getProperty("userDict");
@@ -55,6 +56,7 @@ public class NLPIRTokenizer extends Tokenizer {
 	public NLPIRTokenizer(AttributeFactory factory) {
 		super(factory);
 		this.defaultInit();
+		this.init(data, encoding, sLicenceCode, userDict, bOverwrite);
 	}
 	
 	/**
