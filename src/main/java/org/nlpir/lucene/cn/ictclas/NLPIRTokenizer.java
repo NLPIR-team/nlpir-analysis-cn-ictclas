@@ -41,11 +41,15 @@ public class NLPIRTokenizer extends Tokenizer {
 		try {
 			prop.load(new FileInputStream(new File("nlpir.properties")));
 			data=prop.getProperty("data");
-			System.out.println(data);
 			encoding=Integer.parseInt(prop.getProperty("encoding"));
 			sLicenceCode=prop.getProperty("sLicenceCode");
 			userDict=prop.getProperty("userDict");
 			bOverwrite=Boolean.parseBoolean(prop.getProperty("bOverwrite"));
+			System.out.println(data);
+			System.out.println(encoding);
+			System.out.println(sLicenceCode);
+			System.out.println(userDict);
+			System.out.println(bOverwrite);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
@@ -119,7 +123,7 @@ public class NLPIRTokenizer extends Tokenizer {
 			} catch (NLPIRException e) {
 				e.printStackTrace();
 			}
-		} else if (userDict != null && !userDict.isEmpty()) {
+		} else if (userDict != null && !userDict.isEmpty()&&!userDict.equals("\"\"")) {
 			int state = CNLPIRLibrary.Instance.NLPIR_ImportUserDict(userDict, bOverwrite);
 			if (state == 0)
 				try {
