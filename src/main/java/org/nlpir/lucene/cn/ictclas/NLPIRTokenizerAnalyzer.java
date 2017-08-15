@@ -3,6 +3,11 @@ package org.nlpir.lucene.cn.ictclas;
 import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.Tokenizer;
 
+/**
+ * 
+ * @author panhongyan
+ *
+ */
 public class NLPIRTokenizerAnalyzer extends Analyzer{
 
 	String data=null;

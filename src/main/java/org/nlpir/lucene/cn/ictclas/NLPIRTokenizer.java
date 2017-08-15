@@ -15,7 +15,8 @@ import org.nlpir.segment.CNLPIRLibrary;
 import org.nlpir.segment.exception.NLPIRException;
 
 /**
- * Hello world!
+ * 
+ * @author panhongyan
  *
  */
 public class NLPIRTokenizer extends Tokenizer {

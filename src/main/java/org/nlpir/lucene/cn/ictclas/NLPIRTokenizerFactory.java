@@ -6,6 +6,11 @@ import org.apache.lucene.analysis.Tokenizer;
 import org.apache.lucene.analysis.util.TokenizerFactory;
 import org.apache.lucene.util.AttributeFactory;
 
+/**
+ * 
+ * @author panhongyan
+ *
+ */
 public class NLPIRTokenizerFactory extends TokenizerFactory {
 
 	public NLPIRTokenizerFactory(Map<String, String> args) {
