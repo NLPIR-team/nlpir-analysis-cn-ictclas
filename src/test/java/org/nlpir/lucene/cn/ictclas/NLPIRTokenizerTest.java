@@ -36,6 +36,7 @@ public class NLPIRTokenizerTest {
 		QueryParser parser = new QueryParser(field, nta);
 		Query query = parser.parse("特朗普习近平");
 		TopDocs top=searcher.search(query, 100);
+		System.out.println("总条数："+top.totalHits);
 		ScoreDoc[] hits = top.scoreDocs;
 		for(int i=0;i<hits.length;i++) {
 			System.out.println("doc="+hits[i].doc+" score="+hits[i].score);
