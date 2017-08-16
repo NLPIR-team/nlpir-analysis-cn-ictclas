@@ -43,3 +43,4 @@ Support: MacOS,Linux x86/64, Windows x86/64
 			System.out.println(d.get("contents"));
 		}
 ```
+* Solr
