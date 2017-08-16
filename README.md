@@ -3,7 +3,7 @@ The java package of nlpir/ictclas for lucene/solr 6.6.0 plugin.
 
 Support: MacOS,Linux x86/64, Windows x86/64
 
-# DEMO
+* DEMO
 ```java
         String text="我是中国人";
         NLPIRTokenizerAnalyzer nta = new NLPIRTokenizerAnalyzer("", 1, "", "", false);
@@ -17,7 +17,7 @@ Support: MacOS,Linux x86/64, Windows x86/64
         ts.close();
         nta.close();
 ```
-# Lucene DEMO
+* Lucene DEMO
 ```java
 		//For indexing
     		NLPIRTokenizerAnalyzer nta = new NLPIRTokenizerAnalyzer("", 1, "", "", false);
@@ -43,3 +43,9 @@ Support: MacOS,Linux x86/64, Windows x86/64
 			System.out.println(d.get("contents"));
 		}
 ```
+* Solr
+
+The plugin file ,nlpir.properties contains: 1.data 2.encoding 3.license code 4.user dictory 5.override the user dic.
+Put the file to solr_home/server/, and the data need to set the path of NLPIR/ICTCLAS Data.
+![Alt text](https://github.com/NLPIR-team/nlpir-analysis-cn-ictclas/blob/master/solr.png)
+The plugin jar put the classpath.
