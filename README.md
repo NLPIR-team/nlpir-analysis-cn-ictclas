@@ -21,29 +21,29 @@ The project resources folder is a source folder, which contains all platform's d
 ```
 * Lucene DEMO
 ```java
-		//For indexing
-    		NLPIRTokenizerAnalyzer nta = new NLPIRTokenizerAnalyzer("", 1, "", "", false);
-		IndexWriterConfig inconf=new IndexWriterConfig(nta);
-		inconf.setOpenMode(OpenMode.CREATE_OR_APPEND);
-		IndexWriter index=new IndexWriter(FSDirectory.open(Paths.get("index/")),inconf);
-		Document doc = new Document();
-		doc.add(new TextField("contents", "特朗普表示，很高兴汉堡会晤后再次同习近平主席通话。我同习主席就重大问题保持沟通和协调、两国加强各层级和各领域交往十分重要。当前，美中关系发展态势良好，我相信可以发展得更好。我期待着对中国进行国事访问。",Field.Store.YES));
-		index.addDocument(doc);
-		index.flush();
-		index.close();
-		//for searching
-		String field = "contents";
-		IndexReader reader = DirectoryReader.open(FSDirectory.open(Paths.get("index/")));
-		IndexSearcher searcher = new IndexSearcher(reader);
-		QueryParser parser = new QueryParser(field, nta);
-		Query query = parser.parse("特朗普习近平");
-		TopDocs top=searcher.search(query, 100);
-		ScoreDoc[] hits = top.scoreDocs;
-		for(int i=0;i<hits.length;i++) {
-			System.out.println("doc="+hits[i].doc+" score="+hits[i].score);
-			Document d = searcher.doc(hits[i].doc);
-			System.out.println(d.get("contents"));
-		}
+        //For indexing
+        NLPIRTokenizerAnalyzer nta = new NLPIRTokenizerAnalyzer("", 1, "", "", false);
+        IndexWriterConfig inconf=new IndexWriterConfig(nta);
+        inconf.setOpenMode(OpenMode.CREATE_OR_APPEND);
+        IndexWriter index=new IndexWriter(FSDirectory.open(Paths.get("index/")),inconf);
+        Document doc = new Document();
+        doc.add(new TextField("contents", "特朗普表示，很高兴汉堡会晤后再次同习近平主席通话。我同习主席就重大问题保持沟通和协调、两国加强各层级和各领域交往十分重要。当前，美中关系发展态势良好，我相信可以发展得更好。我期待着对中国进行国事访问。",Field.Store.YES));
+        index.addDocument(doc);
+        index.flush();
+        index.close();
+        //for searching
+        String field = "contents";
+        IndexReader reader = DirectoryReader.open(FSDirectory.open(Paths.get("index/")));
+        IndexSearcher searcher = new IndexSearcher(reader);
+        QueryParser parser = new QueryParser(field, nta);
+        Query query = parser.parse("特朗普习近平");
+        TopDocs top=searcher.search(query, 100);
+        ScoreDoc[] hits = top.scoreDocs;
+        for(int i=0;i<hits.length;i++) {
+        	  System.out.println("doc="+hits[i].doc+" score="+hits[i].score);
+          Document d = searcher.doc(hits[i].doc);
+          System.out.println(d.get("contents"));
+        }
 ```
 * Solr
 
