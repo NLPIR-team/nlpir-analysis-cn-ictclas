@@ -50,8 +50,6 @@ The project resources folder is a source folder, which contains all platform's d
 The plugin file ,nlpir.properties contains: 1.data 2.encoding 3.license code 4.user dictory 5.override the user dic.
 Put the file to solr_home/server/, and the data need to set the path of NLPIR/ICTCLAS Data.
 ![Alt text](https://github.com/NLPIR-team/nlpir-analysis-cn-ictclas/blob/master/solr.png)
-<<<<<<< HEAD
-The plugin jar put the classpath.
 
 * Solr Managed-schema
   <fieldType name="text_general" class="solr.TextField" positionIncrementGap="100">
