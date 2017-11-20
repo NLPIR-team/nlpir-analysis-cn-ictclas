@@ -52,6 +52,7 @@ Put the file to solr_home/server/, and the data need to set the path of NLPIR/IC
 ![Alt text](https://github.com/NLPIR-team/nlpir-analysis-cn-ictclas/blob/master/solr.png)
 
 * Solr Managed-schema
+```
   <fieldType name="text_general" class="solr.TextField" positionIncrementGap="100">
     <analyzer type="index">
       <tokenizer class="org.nlpir.lucene.cn.ictclas.NLPIRTokenizerFactory"/>
@@ -60,3 +61,4 @@ Put the file to solr_home/server/, and the data need to set the path of NLPIR/IC
       <tokenizer class="org.nlpir.lucene.cn.ictclas.NLPIRTokenizerFactory"/>
     </analyzer>
   </fieldType>
+```
