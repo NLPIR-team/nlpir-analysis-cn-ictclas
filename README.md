@@ -40,7 +40,7 @@ The project resources folder is a source folder, which contains all platform's d
         TopDocs top=searcher.search(query, 100);
         ScoreDoc[] hits = top.scoreDocs;
         for(int i=0;i<hits.length;i++) {
-        	  System.out.println("doc="+hits[i].doc+" score="+hits[i].score);
+          System.out.println("doc="+hits[i].doc+" score="+hits[i].score);
           Document d = searcher.doc(hits[i].doc);
           System.out.println(d.get("contents"));
         }
