@@ -54,8 +54,8 @@ The plugin file, nlpir.properties, contains:
 3.license code 
 4.user dictory 
 5.override the user dic.
-```
 Put the file to solr_home/server/, and the data need to set the path of NLPIR/ICTCLAS Data.
+```
 ![Alt text](https://github.com/NLPIR-team/nlpir-analysis-cn-ictclas/blob/master/solr.png)
 
 * Solr Managed-schema
