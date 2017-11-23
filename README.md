@@ -5,7 +5,7 @@ Support: MacOS,Linux x86/64, Windows x86/64
 
 The project resources folder is a source folder, which contains all platform's dynamic libraries and push them to the classpath.//Source Folder 保证所有平台下的动态库自动部署到classpath环境下，以便JNA加载动态库。
 
-* DEMO
+* NLPIRTokenizerAnalyzer DEMO
 ```java
         String text="我是中国人";
         NLPIRTokenizerAnalyzer nta = new NLPIRTokenizerAnalyzer("", 1, "", "", false);
@@ -45,9 +45,16 @@ The project resources folder is a source folder, which contains all platform's d
           System.out.println(d.get("contents"));
         }
 ```
-* Solr
+* Solr Install
 
-The plugin file ,nlpir.properties contains: 1.data 2.encoding 3.license code 4.user dictory 5.override the user dic.
+The plugin file, nlpir.properties, contains: 
+```
+1.data 
+2.encoding 
+3.license code 
+4.user dictory 
+5.override the user dic.
+```
 Put the file to solr_home/server/, and the data need to set the path of NLPIR/ICTCLAS Data.
 ![Alt text](https://github.com/NLPIR-team/nlpir-analysis-cn-ictclas/blob/master/solr.png)
 
