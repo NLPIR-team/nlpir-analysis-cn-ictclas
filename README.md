@@ -1,9 +1,23 @@
-# lucene-analyzers-nlpir-ictclas-6.6.0
+# Lucene-analyzers-nlpir-ictclas-6.6.0
+
 NLPIR/ICTCLAS for Lucene/Solr 6.6.0 analyzer plugin. Support: MacOS,Linux x86/64, Windows x86/64
 
 The project resources folder is a source folder, which contains all platform's dynamic libraries and push them to the classpath.//Source Folder 保证所有平台下的动态库自动部署到classpath环境下，以便JNA加载动态库。
 
+# Building Lucene-analyzers-nlpir-ictclas
+
+Lucene-analyzers-nlpir-ictclas are built using Maven. To build Lucene-analyzers-nlpir-ictclas run:
+
+```java
+mvn clean package -DskipTests
+```
+Or if you use IDE(Eclipse), there is also the same way built by Maven.
+# How to use in your projects
+
+You can use NLPIRTokenizerAnalyzer to do the Chinese Word Segmentation:
+
 * NLPIRTokenizerAnalyzer DEMO
+
 ```java
         String text="我是中国人";
         NLPIRTokenizerAnalyzer nta = new NLPIRTokenizerAnalyzer("", 1, "", "", false);
@@ -17,7 +31,12 @@ The project resources folder is a source folder, which contains all platform's d
         ts.close();
         nta.close();
 ```
+and also use in Lucene：
+
 * Lucene DEMO
+
+The sample shows how to index your text and search by using NLPIRTokenizerAnalyzer.
+
 ```java
         //For indexing
         NLPIRTokenizerAnalyzer nta = new NLPIRTokenizerAnalyzer("", 1, "", "", false);
@@ -43,20 +62,28 @@ The project resources folder is a source folder, which contains all platform's d
           System.out.println(d.get("contents"));
         }
 ```
-* Solr Install
 
-The plugin file, nlpir.properties, contains: 
-```
+# How Solr Install
+
+To make part of Solr, you need these files: 
+
+1. the plugin jar, which you have built and put it in your core's lib directory.
+2. nlpir.properties contains: 
+
+	```
 1.data 
 2.encoding 
 3.license code 
 4.user dictory 
 5.override the user dic.
-Put the file to solr_home/server/, and the data need to set the path of NLPIR/ICTCLAS Data.
-```
-![Alt text](https://github.com/NLPIR-team/nlpir-analysis-cn-ictclas/blob/master/solr.png)
+	```
+
+3. data directory, you can find it in NLPIR SDK <https://github.com/NLPIR-team/NLPIR/tree/master/NLPIR%20SDK/NLPIR-ICTCLAS>
+
+Waring: You need to make sure the plugin jar can find the nlpir.properties file. You can put the file to solr_home/server/, and the data need to set the path of NLPIR/ICTCLAS Data.
 
 * Solr Managed-schema
+
 ```
   <fieldType name="text_general" class="solr.TextField" positionIncrementGap="100">
     <analyzer type="index">
@@ -67,3 +94,5 @@ Put the file to solr_home/server/, and the data need to set the path of NLPIR/IC
     </analyzer>
   </fieldType>
 ```
+
+![Alt text](https://github.com/NLPIR-team/nlpir-analysis-cn-ictclas/blob/master/solr.png)
