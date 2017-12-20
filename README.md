@@ -1,7 +1,5 @@
-# nlpir-analysis-cn-ictclas-6.6.0
-The java package of nlpir/ictclas for lucene/solr 6.6.0 plugin.
-
-Support: MacOS,Linux x86/64, Windows x86/64
+# lucene-analyzers-nlpir-ictclas-6.6.0
+NLPIR/ICTCLAS for Lucene/Solr 6.6.0 analyzer plugin. Support: MacOS,Linux x86/64, Windows x86/64
 
 The project resources folder is a source folder, which contains all platform's dynamic libraries and push them to the classpath.//Source Folder 保证所有平台下的动态库自动部署到classpath环境下，以便JNA加载动态库。
 
