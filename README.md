@@ -71,11 +71,11 @@ To make part of Solr, you need these files:
 2. nlpir.properties contains: 
 
 ```
-1.data 
-2.encoding 
-3.license code 
-4.user dictory 
-5.override the user dic.
+data="" #Data directory‘s parent path
+encoding=1 #0 GBK;1 UTF-8
+sLicenseCode="" # License code
+userDict="" # user dictionary, a text file
+bOverwrite=false # whether overwrite the existed user dictionary or not
 ```
 
 3. data directory, you can find it in NLPIR SDK <https://github.com/NLPIR-team/NLPIR/tree/master/NLPIR%20SDK/NLPIR-ICTCLAS>
@@ -94,5 +94,6 @@ Waring: You need to make sure the plugin jar can find the nlpir.properties file.
     </analyzer>
   </fieldType>
 ```
+# Solr Show
 
 ![Alt text](https://github.com/NLPIR-team/nlpir-analysis-cn-ictclas/blob/master/solr.png)

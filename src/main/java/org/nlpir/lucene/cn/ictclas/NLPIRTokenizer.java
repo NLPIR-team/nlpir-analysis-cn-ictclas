@@ -43,7 +43,7 @@ public class NLPIRTokenizer extends Tokenizer {
 			prop.load(new FileInputStream(new File("nlpir.properties")));
 			data=prop.getProperty("data");
 			encoding=Integer.parseInt(prop.getProperty("encoding"));
-			sLicenceCode=prop.getProperty("sLicenceCode");
+			sLicenceCode=prop.getProperty("sLicenseCode");
 			userDict=prop.getProperty("userDict");
 			bOverwrite=Boolean.parseBoolean(prop.getProperty("bOverwrite"));
 			System.out.println(data);
