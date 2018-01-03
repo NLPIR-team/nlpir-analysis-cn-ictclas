@@ -76,7 +76,7 @@ To make part of Solr, you need these files:
 3.license code 
 4.user dictory 
 5.override the user dic.
-	```
+```
 
 3. data directory, you can find it in NLPIR SDK <https://github.com/NLPIR-team/NLPIR/tree/master/NLPIR%20SDK/NLPIR-ICTCLAS>
 
