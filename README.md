@@ -70,7 +70,7 @@ To make part of Solr, you need these files:
 1. the plugin jar, which you have built and put it in your core's lib directory.
 2. nlpir.properties contains: 
 
-	```
+```
 1.data 
 2.encoding 
 3.license code 
