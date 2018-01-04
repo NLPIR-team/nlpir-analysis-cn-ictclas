@@ -6,12 +6,12 @@ The project resources folder is a source folder, which contains all platform's d
 
 # Building Lucene-analyzers-nlpir-ictclas
 
-Lucene-analyzers-nlpir-ictclas are built using Maven. To build Lucene-analyzers-nlpir-ictclas run:
+Lucene-analyzers-nlpir-ictclas is built by Maven. To build Lucene-analyzers-nlpir-ictclas run:
 
 ```java
 mvn clean package -DskipTests
 ```
-Or if you use IDE(Eclipse), there is also the same way built by Maven.
+Or if you use IDE(Eclipse), there is also the same way.
 # How to use in your projects
 
 You can use NLPIRTokenizerAnalyzer to do the Chinese Word Segmentation:
