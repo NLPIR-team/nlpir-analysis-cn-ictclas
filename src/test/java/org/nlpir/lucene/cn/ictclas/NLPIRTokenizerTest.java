@@ -20,7 +20,9 @@ import org.apache.lucene.store.FSDirectory;
 public class NLPIRTokenizerTest {
 
 	public static void main(String[] args) throws Exception {
+		//NLPIR
 		NLPIRTokenizerAnalyzer nta = new NLPIRTokenizerAnalyzer("", 1, "", "", false);
+		//Index
 		IndexWriterConfig inconf=new IndexWriterConfig(nta);
 		inconf.setOpenMode(OpenMode.CREATE_OR_APPEND);
 		IndexWriter index=new IndexWriter(FSDirectory.open(Paths.get("index/")),inconf);
@@ -29,7 +31,7 @@ public class NLPIRTokenizerTest {
 		index.addDocument(doc);
 		index.flush();
 		index.close();
-		
+		//Search
 		String field = "contents";
 		IndexReader reader = DirectoryReader.open(FSDirectory.open(Paths.get("index/")));
 		IndexSearcher searcher = new IndexSearcher(reader);

@@ -7,9 +7,8 @@ import org.apache.lucene.analysis.util.TokenizerFactory;
 import org.apache.lucene.util.AttributeFactory;
 
 /**
- * 
+ * 分词工厂类
  * @author panhongyan
- *
  */
 public class NLPIRTokenizerFactory extends TokenizerFactory {
 

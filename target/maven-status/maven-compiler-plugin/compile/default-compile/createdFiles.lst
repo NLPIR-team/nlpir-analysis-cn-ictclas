@@ -1,5 +1,8 @@
 org/nlpir/lucene/cn/ictclas/NLPIRTokenizer.class
-org/nlpir/segment/CNLPIRLibrary.class
+org/nlpir/lucene/cn/ictclas/finersegmet/FinerTokenizerFactory.class
 org/nlpir/segment/exception/NLPIRException.class
+org/nlpir/lucene/cn/ictclas/finersegmet/FinerTokenizerAnalyzer.class
+org/nlpir/segment/CNLPIRLibrary.class
 org/nlpir/lucene/cn/ictclas/NLPIRTokenizerFactory.class
+org/nlpir/lucene/cn/ictclas/finersegmet/FinerTokenizer.class
 org/nlpir/lucene/cn/ictclas/NLPIRTokenizerAnalyzer.class

@@ -25,7 +25,7 @@ public interface CNLPIRLibrary extends Library {
 	
 	public int NLPIR_ImportUserDict(String dictFileName, boolean bOverwrite);
 	
-	public int NLPIR_ImportKeyBlackList(String sFilename);
+//	public int NLPIR_ImportKeyBlackList(String sFilename);
 	
 	public long NLPIR_FingerPrint(String sLine);
 	

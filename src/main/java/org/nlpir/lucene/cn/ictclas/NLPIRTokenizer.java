@@ -6,6 +6,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.apache.log4j.Logger;
 import org.apache.lucene.analysis.Tokenizer;
 import org.apache.lucene.analysis.tokenattributes.CharTermAttribute;
 import org.apache.lucene.analysis.tokenattributes.OffsetAttribute;
@@ -15,12 +16,13 @@ import org.nlpir.segment.CNLPIRLibrary;
 import org.nlpir.segment.exception.NLPIRException;
 
 /**
- * 
+ * 分词类
  * @author panhongyan
- *
  */
 public class NLPIRTokenizer extends Tokenizer {
 
+	Logger logger=Logger.getLogger(NLPIRTokenizer.class);
+	
 	private final CharTermAttribute termAtt = addAttribute(CharTermAttribute.class);
 	private final OffsetAttribute offsetAtt = addAttribute(OffsetAttribute.class);
 	private final TypeAttribute typeAtt = addAttribute(TypeAttribute.class);
@@ -38,7 +40,18 @@ public class NLPIRTokenizer extends Tokenizer {
 	String userDict = null;
 	boolean bOverwrite = false;
 
+	private boolean initState=false;
+	
+	/**
+	 * Solr中使用的配有文件，用于加载NLPIR分词相关配置，分词初始化时进行加载。
+	 * @param Data
+	 * @param Encoding 
+	 * @param Licence code
+	 * @param User Dict
+	 * @param User Dict bOverwrite
+	 */
 	public void defaultInit() {
+		if(this.initState) return;
 		Properties prop = new Properties();
 		try {
 			prop.load(new FileInputStream(new File("nlpir.properties")));
@@ -47,11 +60,11 @@ public class NLPIRTokenizer extends Tokenizer {
 			sLicenceCode = prop.getProperty("sLicenceCode");
 			userDict = prop.getProperty("userDict");
 			bOverwrite = Boolean.parseBoolean(prop.getProperty("bOverwrite"));
-			System.out.println(data);
-			System.out.println(encoding);
-			System.out.println(sLicenceCode);
-			System.out.println(userDict);
-			System.out.println(bOverwrite);
+			logger.info("NLPIR Data Path:\n"+data);
+			logger.info("NLPIR Encoding Set:\n"+encoding);
+			logger.info("NLPIR Licence Code:\n"+sLicenceCode);
+			logger.info("NLPIR User Dict:\n"+userDict);
+			logger.info("NLPIR User Dict bOverwrite:\n"+bOverwrite);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
@@ -59,7 +72,10 @@ public class NLPIRTokenizer extends Tokenizer {
 		}
 	}
 
-	// 默认初始化方法
+	/**
+	 *  默认初始化方法
+	 * @param factory
+	 */
 	public NLPIRTokenizer(AttributeFactory factory) {
 		super(factory);
 		this.defaultInit();
@@ -119,8 +135,9 @@ public class NLPIRTokenizer extends Tokenizer {
 	 *            用户词典引入方式
 	 */
 	private void init(String data, int encoding, String sLicenceCode, String userDict, boolean bOverwrite) {
-		boolean flag = CNLPIRLibrary.Instance.NLPIR_Init(data, encoding, sLicenceCode);
-		if (!flag) {
+		if(this.initState) return;
+		this.initState = CNLPIRLibrary.Instance.NLPIR_Init(data, encoding, sLicenceCode);
+		if (!this.initState) {
 			try {
 				throw new NLPIRException(CNLPIRLibrary.Instance.NLPIR_GetLastErrorMsg());
 			} catch (NLPIRException e) {
