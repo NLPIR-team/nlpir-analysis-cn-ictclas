@@ -94,6 +94,9 @@ Waring: You need to make sure the plugin jar can find the nlpir.properties file.
     </analyzer>
   </fieldType>
 ```
+
+4. dependency jar for dll: jna.jar. add to your solr's lib.
+
 # Solr Show
 
 ![Alt text](https://github.com/NLPIR-team/nlpir-analysis-cn-ictclas/blob/master/solr.png)
