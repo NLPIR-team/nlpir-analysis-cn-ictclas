@@ -8,7 +8,7 @@ The project resources folder is a source folder, which contains all platform's d
 
 Lucene-analyzers-nlpir-ictclas is built by Maven. To build Lucene-analyzers-nlpir-ictclas run:
 
-```java
+```bash
 mvn clean package -DskipTests
 ```
 Or if you use IDE(Eclipse), there is also the same way.

@@ -27,25 +27,26 @@ public class NLPIRTokenizer extends Tokenizer {
 
 	private String[] buffer = null;
 	private StringBuffer cbuffer = null;
+	private String line = null;
 	int start = 0;
 	int end = 0;
 	int current = 0;
 
-	String data=null;
-	int encoding=1;
-	String sLicenceCode=null;
-	String userDict=null;
-	boolean bOverwrite=false;
-	
+	String data = null;
+	int encoding = 1;
+	String sLicenceCode = null;
+	String userDict = null;
+	boolean bOverwrite = false;
+
 	public void defaultInit() {
-		Properties prop=new Properties();
+		Properties prop = new Properties();
 		try {
 			prop.load(new FileInputStream(new File("nlpir.properties")));
-			data=prop.getProperty("data");
-			encoding=Integer.parseInt(prop.getProperty("encoding"));
-			sLicenceCode=prop.getProperty("sLicenseCode");
-			userDict=prop.getProperty("userDict");
-			bOverwrite=Boolean.parseBoolean(prop.getProperty("bOverwrite"));
+			data = prop.getProperty("data");
+			encoding = Integer.parseInt(prop.getProperty("encoding"));
+			sLicenceCode = prop.getProperty("sLicenceCode");
+			userDict = prop.getProperty("userDict");
+			bOverwrite = Boolean.parseBoolean(prop.getProperty("bOverwrite"));
 			System.out.println(data);
 			System.out.println(encoding);
 			System.out.println(sLicenceCode);
@@ -57,13 +58,14 @@ public class NLPIRTokenizer extends Tokenizer {
 			e.printStackTrace();
 		}
 	}
-	//默认初始化方法
+
+	// 默认初始化方法
 	public NLPIRTokenizer(AttributeFactory factory) {
 		super(factory);
 		this.defaultInit();
 		this.init(data, encoding, sLicenceCode, userDict, bOverwrite);
 	}
-	
+
 	/**
 	 * 分词初始化
 	 * 
@@ -124,7 +126,7 @@ public class NLPIRTokenizer extends Tokenizer {
 			} catch (NLPIRException e) {
 				e.printStackTrace();
 			}
-		} else if (userDict != null && !userDict.isEmpty()&&!userDict.equals("\"\"")) {
+		} else if (userDict != null && !userDict.isEmpty() && !userDict.equals("\"\"")) {
 			int state = CNLPIRLibrary.Instance.NLPIR_ImportUserDict(userDict, bOverwrite);
 			if (state == 0)
 				try {
@@ -140,6 +142,7 @@ public class NLPIRTokenizer extends Tokenizer {
 		if (buffer != null && buffer.length < current + 1) {
 			cbuffer = null;
 			buffer = null;
+			line = null;
 			start = 0;
 			end = 0;
 			current = 0;
@@ -151,7 +154,10 @@ public class NLPIRTokenizer extends Tokenizer {
 			while ((c = input.read()) != -1) {
 				cbuffer.append((char) c);
 			}
-			buffer = CNLPIRLibrary.Instance.NLPIR_ParagraphProcess(cbuffer.toString(), 0).split("\\s");
+			line = cbuffer.toString();
+			if (line.replaceAll("\\s", "").length() == 0)
+				line = "";
+			buffer = CNLPIRLibrary.Instance.NLPIR_ParagraphProcess(line, 0).split("\\s");
 		}
 		clearAttributes();
 		int length = buffer[current].length();
