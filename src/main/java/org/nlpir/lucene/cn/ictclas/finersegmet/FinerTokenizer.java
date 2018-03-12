@@ -10,6 +10,7 @@ import org.apache.log4j.Logger;
 import org.apache.lucene.analysis.Tokenizer;
 import org.apache.lucene.analysis.tokenattributes.CharTermAttribute;
 import org.apache.lucene.analysis.tokenattributes.OffsetAttribute;
+import org.apache.lucene.analysis.tokenattributes.PositionLengthAttribute;
 import org.apache.lucene.analysis.tokenattributes.TypeAttribute;
 import org.apache.lucene.util.AttributeFactory;
 import org.nlpir.segment.CNLPIRLibrary;
@@ -22,7 +23,8 @@ public class FinerTokenizer extends Tokenizer{
 	private final CharTermAttribute termAtt = addAttribute(CharTermAttribute.class);
 	private final OffsetAttribute offsetAtt = addAttribute(OffsetAttribute.class);
 	private final TypeAttribute typeAtt = addAttribute(TypeAttribute.class);
-
+	private final PositionLengthAttribute posArr= addAttribute(PositionLengthAttribute.class);
+	
 	private String[] buffer = null;
 	private StringBuffer cbuffer = null;
 	private String line = null;

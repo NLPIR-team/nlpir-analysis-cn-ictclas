@@ -101,13 +101,6 @@ Waring: You need to make sure the plugin jar can find the nlpir.properties file.
 
 # Tokenizer
 
-* v1.*
-
-```
-//Standard Tokenizer
-class="org.nlpir.lucene.cn.ictclas.NLPIRTokenizerFactory"
-```
-
 * v2.*
 
 ```
@@ -115,6 +108,13 @@ class="org.nlpir.lucene.cn.ictclas.NLPIRTokenizerFactory"
 class="org.nlpir.lucene.cn.ictclas.NLPIRTokenizerFactory"
 //Finer Segment
 class="org.nlpir.lucene.cn.ictclas.finersegmet.FinerTokenizerFactory"
+```
+
+* v1.*
+
+```
+//Standard Tokenizer
+class="org.nlpir.lucene.cn.ictclas.NLPIRTokenizerFactory"
 ```
 
 # Solr Show
