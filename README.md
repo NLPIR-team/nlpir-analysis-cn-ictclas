@@ -1,4 +1,4 @@
-# Lucene-analyzers-nlpir-ictclas-6.6.0
+# Lucene-analyzers-nlpir-ictclas-6.6.0 V2.0
 
 NLPIR/ICTCLAS for Lucene/Solr 6.6.0 analyzer plugin. Support: MacOS,Linux x86/64, Windows x86/64
 
@@ -96,6 +96,24 @@ Waring: You need to make sure the plugin jar can find the nlpir.properties file.
 ```
 
 4. dependency jar for dll: jna.jar. add to your solr's lib.
+
+# Tokenizer
+
+* v1.*
+
+```
+//Standard Tokenizer
+class="org.nlpir.lucene.cn.ictclas.NLPIRTokenizerFactory"
+```
+
+* v2.*
+
+```
+//Standard Tokenizer
+class="org.nlpir.lucene.cn.ictclas.NLPIRTokenizerFactory"
+//Finer Segment
+class="org.nlpir.lucene.cn.ictclas.finersegmet.FinerTokenizerFactory"
+```
 
 # Solr Show
 
