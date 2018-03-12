@@ -1,4 +1,6 @@
-# V2.0 Lucene-analyzers-nlpir-ictclas-6.6.0
+# Now NLPIR/ICTCLAS for Lucene/Solr plugin V2.0 
+
+# Lucene-analyzers-nlpir-ictclas-6.6.0
 
 NLPIR/ICTCLAS for Lucene/Solr 6.6.0 analyzer plugin. Support: MacOS,Linux x86/64, Windows x86/64
 
