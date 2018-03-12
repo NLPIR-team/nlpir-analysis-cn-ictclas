@@ -97,6 +97,24 @@ Waring: You need to make sure the plugin jar can find the nlpir.properties file.
 
 4. dependency jar for dll: jna.jar. add to your solr's lib.
 
+# Tokenizer
+
+* v1.*
+
+```
+//Standard Tokenizer
+class="org.nlpir.lucene.cn.ictclas.NLPIRTokenizerFactory"
+```
+
+* v2.*
+
+```
+//Standard Tokenizer
+class="org.nlpir.lucene.cn.ictclas.NLPIRTokenizerFactory"
+//Finer Segment
+class="org.nlpir.lucene.cn.ictclas.finersegmet.FinerTokenizerFactory"
+```
+
 # Solr Show
 
 ![Alt text](https://github.com/NLPIR-team/nlpir-analysis-cn-ictclas/blob/master/solr.png)
