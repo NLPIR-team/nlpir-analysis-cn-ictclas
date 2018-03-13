@@ -179,6 +179,7 @@ public class FinerTokenizer extends Tokenizer{
 		end = start + length;
 		termAtt.copyBuffer(buffer[current].toCharArray(), 0, length);
 		offsetAtt.setOffset(correctOffset(start), correctOffset(end));
+		posArr.setPositionLength(current+1);
 		typeAtt.setType("word");
 		start = end;
 		current += 1;
