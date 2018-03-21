@@ -1,4 +1,4 @@
-# Now NLPIR/ICTCLAS for Lucene/Solr plugin V2.0 
+# Now NLPIR/ICTCLAS for Lucene/Solr plugin V2.2 
 
 # Lucene-analyzers-nlpir-ictclas-6.6.0
 
