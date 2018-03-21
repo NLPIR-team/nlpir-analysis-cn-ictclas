@@ -40,7 +40,6 @@ public class NLPIRTokenizer extends Tokenizer {
 	String sLicenceCode = null;
 	String userDict = null;
 	boolean bOverwrite = false;
-
 	public static boolean initState = false;
 
 	/**
