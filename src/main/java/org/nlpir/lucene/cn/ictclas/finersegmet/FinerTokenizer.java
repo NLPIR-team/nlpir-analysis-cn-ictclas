@@ -38,7 +38,11 @@ public class FinerTokenizer extends Tokenizer {
 	String userDict = null;
 	boolean bOverwrite = false;
 
+<<<<<<< HEAD
 	public static boolean initState = false;
+=======
+	private boolean initState = false;
+>>>>>>> branch 'master' of https://github.com/NLPIR-team/nlpir-analysis-cn-ictclas.git
 
 	/**
 	 * Solr中使用的配有文件，用于加载NLPIR分词相关配置，分词初始化时进行加载。
@@ -53,7 +57,11 @@ public class FinerTokenizer extends Tokenizer {
 	 *            Dict bOverwrite
 	 */
 	public void defaultInit() {
+<<<<<<< HEAD
 		if (FinerTokenizer.initState)
+=======
+		if (this.initState)
+>>>>>>> branch 'master' of https://github.com/NLPIR-team/nlpir-analysis-cn-ictclas.git
 			return;
 		Properties prop = new Properties();
 		try {
@@ -139,11 +147,19 @@ public class FinerTokenizer extends Tokenizer {
 	 *            用户词典引入方式
 	 */
 	private void init(String data, int encoding, String sLicenceCode, String userDict, boolean bOverwrite) {
+<<<<<<< HEAD
 		if (FinerTokenizer.initState)
 			return;
 		FinerTokenizer.initState = CNLPIRLibrary.Instance.NLPIR_Init(data, encoding, sLicenceCode);
 		logger.info("NLPIR 初始化：" + FinerTokenizer.initState);
 		if (!FinerTokenizer.initState) {
+=======
+		if (this.initState)
+			return;
+		this.initState = CNLPIRLibrary.Instance.NLPIR_Init(data, encoding, sLicenceCode);
+		logger.info("NLPIR 初始化：" + this.initState);
+		if (!this.initState) {
+>>>>>>> branch 'master' of https://github.com/NLPIR-team/nlpir-analysis-cn-ictclas.git
 			try {
 				throw new NLPIRException(CNLPIRLibrary.Instance.NLPIR_GetLastErrorMsg());
 			} catch (NLPIRException e) {
