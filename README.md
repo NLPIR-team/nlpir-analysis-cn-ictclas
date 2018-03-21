@@ -105,16 +105,16 @@ Waring: You need to make sure the plugin jar can find the nlpir.properties file.
 
 ```
 //Standard Tokenizer
-class="org.nlpir.lucene.cn.ictclas.NLPIRTokenizerFactory"
+class="org.nlpir.lucene.cn.ictclas.NLPIRTokenizer"
 //Finer Segment
-class="org.nlpir.lucene.cn.ictclas.finersegmet.FinerTokenizerFactory"
+class="org.nlpir.lucene.cn.ictclas.finersegmet.FinerTokenizer"
 ```
 
 * v1.*
 
 ```
 //Standard Tokenizer
-class="org.nlpir.lucene.cn.ictclas.NLPIRTokenizerFactory"
+class="org.nlpir.lucene.cn.ictclas.NLPIRTokenizer"
 ```
 
 # Solr Show
