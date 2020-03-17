@@ -5,16 +5,19 @@ import org.apache.lucene.analysis.Tokenizer;
 
 /**
  * 
- * @author panhongyan
+ * @author wangsiwei
  *
  */
 public class NLPIRTokenizerAnalyzer extends Analyzer {
 
 	String data = null;
 	int encoding = 1;
-	String sLicenceCode = null;
+	String sLicenceCode = "";
 	String userDict = null;
 	boolean bOverwrite = false;
+
+	public NLPIRTokenizerAnalyzer() {
+	}
 
 	/**
 	 * 分词初始化
@@ -27,7 +30,7 @@ public class NLPIRTokenizerAnalyzer extends Analyzer {
 	 *            授权码，默认为""
 	 * @param userDict
 	 *            用户词典文件
-	 * @param nOverwrite
+	 * @param bOverwrite
 	 *            用户词典引入方式
 	 */
 	public NLPIRTokenizerAnalyzer(String data, int encoding, String sLicenceCode, String userDict, boolean bOverwrite) {

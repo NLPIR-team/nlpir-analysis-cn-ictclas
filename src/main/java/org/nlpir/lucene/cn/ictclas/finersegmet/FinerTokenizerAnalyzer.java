@@ -7,9 +7,12 @@ public class FinerTokenizerAnalyzer extends Analyzer {
 
 	String data = null;
 	int encoding = 1;
-	String sLicenceCode = null;
+	String sLicenceCode = "";
 	String userDict = null;
 	boolean bOverwrite = false;
+
+	public FinerTokenizerAnalyzer() {
+	}
 
 	/**
 	 * 分词初始化
@@ -22,7 +25,7 @@ public class FinerTokenizerAnalyzer extends Analyzer {
 	 *            授权码，默认为""
 	 * @param userDict
 	 *            用户词典文件
-	 * @param nOverwrite
+	 * @param bOverwrite
 	 *            用户词典引入方式
 	 */
 	public FinerTokenizerAnalyzer(String data, int encoding, String sLicenceCode, String userDict, boolean bOverwrite) {

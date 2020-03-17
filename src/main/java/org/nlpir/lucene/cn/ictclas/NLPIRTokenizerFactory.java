@@ -1,10 +1,10 @@
 package org.nlpir.lucene.cn.ictclas;
 
-import java.util.Map;
-
 import org.apache.lucene.analysis.Tokenizer;
 import org.apache.lucene.analysis.util.TokenizerFactory;
 import org.apache.lucene.util.AttributeFactory;
+
+import java.util.Map;
 
 /**
  * 分词工厂类
@@ -31,7 +31,7 @@ public class NLPIRTokenizerFactory extends TokenizerFactory {
 	 *            授权码，默认为""
 	 * @param userDict
 	 *            用户词典文件
-	 * @param nOverwrite
+	 * @param bOverwrite
 	 *            用户词典引入方式
 	 */
 	public Tokenizer create(AttributeFactory factory, String data, int encoding, String sLicenceCode, String userDict,

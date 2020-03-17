@@ -1,8 +1,8 @@
 # Now NLPIR/ICTCLAS for Lucene/Solr plugin V2.2 
 
-# Lucene-analyzers-nlpir-ictclas-6.6.0
+# Lucene-analyzers-nlpir-ictclas-8.4.1
 
-NLPIR/ICTCLAS for Lucene/Solr 6.6.0 analyzer plugin. Support: MacOS,Linux x86/64, Windows x86/64
+NLPIR/ICTCLAS for Lucene/Solr 8.4.1 analyzer plugin. Support: MacOS,Linux x86/64, Windows x86/64
 
 The project resources folder is a source folder, which contains all platform's dynamic libraries and push them to the classpath.//Source Folder 保证所有平台下的动态库自动部署到classpath环境下，以便JNA加载动态库。
 
@@ -69,35 +69,47 @@ The sample shows how to index your text and search by using NLPIRTokenizerAnalyz
 
 To make part of Solr, you need these files: 
 
-1. the plugin jar, which you have built and put it in your core's lib directory.
+0. git clone the src(git clone https://github.com/NLPIR-team/nlpir-analysis-cn-ictclas.git) 
+and Data directory which u can find in NLPIR SDK <https://github.com/NLPIR-team/NLPIR/tree/master/NLPIR%20SDK/NLPIR-ICTCLAS>
+u should configure the configuration items in resources/nlpir.properties in advance,and then build the jar with the property file
+(This step can be skipped,however, if you have problems with your configuration later, follow the instructions in this step)
+
+
+1. the plugin jar which you have built or download from this site ,and put it in your core's lib directory(solr-8.4.1/server/solr-webapp/webapp/WEB-INF/lib/).
+
+
 2. nlpir.properties contains: 
 
 ```
-data="" #Data directory‘s parent path
+data=/solr-8.4.1/server/ #Data directory‘s parent path
 encoding=1 #0 GBK;1 UTF-8
-sLicenseCode="" # License code
-userDict="" # user dictionary, a text file
+sLicenseCode=  #none
+userDict=  # user dictionary, a text file(userDict.txt)
 bOverwrite=false # whether overwrite the existed user dictionary or not
 ```
 
-3. data directory, you can find it in NLPIR SDK <https://github.com/NLPIR-team/NLPIR/tree/master/NLPIR%20SDK/NLPIR-ICTCLAS>
+3. data directory, u can find it in NLPIR SDK <https://github.com/NLPIR-team/NLPIR/tree/master/NLPIR%20SDK/NLPIR-ICTCLAS>
+the data directory should be positioned under /solr-8.4.1/server/
+And u need to ensure that the authorization file (.user) in the data folder is valid
+u can find it in <https://github.com/NLPIR-team/NLPIR/tree/master/License/license%20for%20a%20month>
 
-Waring: You need to make sure the plugin jar can find the nlpir.properties file. You can put the file to solr_home/server/, and the data need to set the path of NLPIR/ICTCLAS Data.
+
+Waring: You need to make sure the plugin jar can find the nlpir.properties file. You can put the file to solr_home/server/, and the data need to set the path of Data.
 
 * Solr Managed-schema
 
 ```
-  <fieldType name="text_general" class="solr.TextField" positionIncrementGap="100">
+  <fieldType name="text_nlpir" class="solr.TextField">
     <analyzer type="index">
-      <tokenizer class="org.nlpir.lucene.cn.ictclas.NLPIRTokenizerFactory"/>
+      <tokenizer class="org.nlpir.lucene.cn.ictclas.NLPIRTokenizerAnalyzer"/>
     </analyzer>
     <analyzer type="query">
-      <tokenizer class="org.nlpir.lucene.cn.ictclas.NLPIRTokenizerFactory"/>
+      <tokenizer class="org.nlpir.lucene.cn.ictclas.NLPIRTokenizerAnalyzer"/>
     </analyzer>
   </fieldType>
 ```
 
-4. dependency jar for dll: jna.jar. add to your solr's lib.
+4. dependency jar for dll: jna.jar(4.1.0). add to your solr's lib(solr-8.4.1/server/solr-webapp/webapp/WEB-INF/lib/).
 
 # Tokenizer
 

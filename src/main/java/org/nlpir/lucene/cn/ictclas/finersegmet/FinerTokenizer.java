@@ -1,11 +1,5 @@
 package org.nlpir.lucene.cn.ictclas.finersegmet;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.util.Properties;
-
 import org.apache.log4j.Logger;
 import org.apache.lucene.analysis.Tokenizer;
 import org.apache.lucene.analysis.tokenattributes.CharTermAttribute;
@@ -15,6 +9,12 @@ import org.apache.lucene.analysis.tokenattributes.TypeAttribute;
 import org.apache.lucene.util.AttributeFactory;
 import org.nlpir.segment.CNLPIRLibrary;
 import org.nlpir.segment.exception.NLPIRException;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
 
 public class FinerTokenizer extends Tokenizer {
 
@@ -34,22 +34,20 @@ public class FinerTokenizer extends Tokenizer {
 
 	String data = null;
 	int encoding = 1;
-	String sLicenceCode = null;
+	String sLicenceCode = "";
 	String userDict = null;
 	boolean bOverwrite = false;
 
 	public static boolean initState = false;
 
+
+	public FinerTokenizer() {
+	}
+
 	/**
 	 * Solr中使用的配有文件，用于加载NLPIR分词相关配置，分词初始化时进行加载。
 	 * 
-	 * @param Data
-	 * @param Encoding
-	 * @param Licence
-	 *            code
-	 * @param User
-	 *            Dict
-	 * @param User
+
 	 *            Dict bOverwrite
 	 */
 	public void defaultInit() {
@@ -97,7 +95,7 @@ public class FinerTokenizer extends Tokenizer {
 	 *            授权码，默认为""
 	 * @param userDict
 	 *            用户词典文件
-	 * @param nOverwrite
+	 * @param bOverwrite
 	 *            用户词典引入方式
 	 */
 	public FinerTokenizer(String data, int encoding, String sLicenceCode, String userDict, boolean bOverwrite) {
@@ -115,7 +113,7 @@ public class FinerTokenizer extends Tokenizer {
 	 *            授权码，默认为""
 	 * @param userDict
 	 *            用户词典文件
-	 * @param nOverwrite
+	 * @param bOverwrite
 	 *            用户词典引入方式
 	 */
 	public FinerTokenizer(AttributeFactory factory, String data, int encoding, String sLicenceCode, String userDict,
@@ -135,13 +133,13 @@ public class FinerTokenizer extends Tokenizer {
 	 *            授权码，默认为""
 	 * @param userDict
 	 *            用户词典文件
-	 * @param nOverwrite
+	 * @param bOverwrite
 	 *            用户词典引入方式
 	 */
 	private void init(String data, int encoding, String sLicenceCode, String userDict, boolean bOverwrite) {
 		if (FinerTokenizer.initState)
 			return;
-		FinerTokenizer.initState = CNLPIRLibrary.Instance.NLPIR_Init(data, encoding, sLicenceCode);
+		FinerTokenizer.initState = CNLPIRLibrary.Instance.NLPIR_Init(data, encoding, "");
 		logger.info("NLPIR 初始化：" + FinerTokenizer.initState);
 		if (!FinerTokenizer.initState) {
 			try {

@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ced671b0-e45c-45fa-9ac3-cf8bb7b4398b" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jna_jna_4_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_analyzers_common_8_4_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_core_8_4_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_queries_8_4_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_queryparser_8_4_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_sandbox_8_4_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lucene-analyzers-nlpir-ictclas.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/Configure.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Configure.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/nlpir.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/nlpir/lucene/cn/ictclas/NLPIRTokenizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nlpir/lucene/cn/ictclas/NLPIRTokenizer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/nlpir/lucene/cn/ictclas/NLPIRTokenizerAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nlpir/lucene/cn/ictclas/NLPIRTokenizerAnalyzer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/nlpir/lucene/cn/ictclas/NLPIRTokenizerFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nlpir/lucene/cn/ictclas/NLPIRTokenizerFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/nlpir/lucene/cn/ictclas/finersegmet/FinerTokenizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nlpir/lucene/cn/ictclas/finersegmet/FinerTokenizer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/nlpir/lucene/cn/ictclas/finersegmet/FinerTokenizerAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nlpir/lucene/cn/ictclas/finersegmet/FinerTokenizerAnalyzer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/nlpir/lucene/cn/ictclas/finersegmet/FinerTokenizerFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nlpir/lucene/cn/ictclas/finersegmet/FinerTokenizerFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/maven/lucene-analyzers-nlpir-ictclas/lucene-analyzers-nlpir-ictclas/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/maven/lucene-analyzers-nlpir-ictclas/lucene-analyzers-nlpir-ictclas/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/nlpir/lucene/cn/ictclas/NLPIRTokenizer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/nlpir/lucene/cn/ictclas/NLPIRTokenizer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/nlpir/lucene/cn/ictclas/NLPIRTokenizerAnalyzer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/nlpir/lucene/cn/ictclas/NLPIRTokenizerAnalyzer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/nlpir/lucene/cn/ictclas/finersegmet/FinerTokenizer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/nlpir/lucene/cn/ictclas/finersegmet/FinerTokenizer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/nlpir/lucene/cn/ictclas/finersegmet/FinerTokenizerAnalyzer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/nlpir/lucene/cn/ictclas/finersegmet/FinerTokenizerAnalyzer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lucene-analyzers-nlpir-ictclas-6.6.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="NLPIRTokenizer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/nlpir/lucene/cn/ictclas/NLPIRTokenizer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="24">
+              <caret line="53" column="8" selection-start-line="53" selection-start-column="8" selection-end-line="53" selection-end-column="8" />
+              <folding>
+                <element signature="docComment;method#defaultInit#0;class#NLPIRTokenizer#0" expanded="true" />
+                <element signature="method#NLPIRTokenizer#0;class#NLPIRTokenizer#0" expanded="true" />
+                <element signature="docComment;method#NLPIRTokenizer#1;class#NLPIRTokenizer#0" expanded="true" />
+                <element signature="method#NLPIRTokenizer#1;class#NLPIRTokenizer#0" expanded="true" />
+                <element signature="docComment;method#NLPIRTokenizer#2;class#NLPIRTokenizer#0" expanded="true" />
+                <element signature="method#NLPIRTokenizer#2;class#NLPIRTokenizer#0" expanded="true" />
+                <element signature="docComment;method#init#0;class#NLPIRTokenizer#0" expanded="true" />
+                <element signature="method#incrementToken#0;class#NLPIRTokenizer#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FinerTokenizerAnalyzer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/nlpir/lucene/cn/ictclas/finersegmet/FinerTokenizerAnalyzer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="145">
+              <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+              <folding>
+                <element signature="method#FinerTokenizerAnalyzer#0;class#FinerTokenizerAnalyzer#0" expanded="true" />
+                <element signature="method#createComponents#0;class#FinerTokenizerAnalyzer#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FinerTokenizerFactory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/nlpir/lucene/cn/ictclas/finersegmet/FinerTokenizerFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="docComment;method#create#0;class#FinerTokenizerFactory#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Configure.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Data/Configure.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="263">
+              <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NLPIRTokenizerAnalyzer.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/nlpir/lucene/cn/ictclas/NLPIRTokenizerAnalyzer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="24" column="18" lean-forward="true" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="docComment;class#NLPIRTokenizerAnalyzer#0" expanded="true" />
+                <element signature="method#NLPIRTokenizerAnalyzer#0;class#NLPIRTokenizerAnalyzer#0" expanded="true" />
+                <element signature="method#NLPIRTokenizerAnalyzer#0;class#NLPIRTokenizerAnalyzer#0" expanded="true" />
+                <element signature="method#createComponents#0;class#NLPIRTokenizerAnalyzer#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReadProperties.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/org/nlpir/lucene/cn/ictclas/ReadProperties.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="290">
+              <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NLPIRTokenizerFactory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/nlpir/lucene/cn/ictclas/NLPIRTokenizerFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="docComment;class#NLPIRTokenizerFactory#0" expanded="true" />
+                <element signature="method#NLPIRTokenizerFactory#0;class#NLPIRTokenizerFactory#0" expanded="true" />
+                <element signature="docComment;method#create#0;class#NLPIRTokenizerFactory#0" expanded="true" />
+                <element signature="method#create#0;class#NLPIRTokenizerFactory#0" expanded="true" />
+                <element signature="e#1041#1042#0" expanded="true" />
+                <element signature="e#1082#1083#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/org/nlpir/lucene/cn/ictclas/NLPIRTokenizerFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/nlpir/lucene/cn/ictclas/finersegmet/FinerTokenizerFactory.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/org/nlpir/lucene/cn/ictclas/NLPIRTokenizerAnalyzer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/nlpir/lucene/cn/ictclas/finersegmet/FinerTokenizer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/nlpir/lucene/cn/ictclas/finersegmet/FinerTokenizerAnalyzer.java" />
+        <option value="$PROJECT_DIR$/Data/Configure.xml" />
+        <option value="$PROJECT_DIR$/resources/nlpir.properties" />
+        <option value="$PROJECT_DIR$/src/test/resources/nlpir.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/org/nlpir/lucene/cn/ictclas/NLPIRTokenizer.java" />
+        <option value="$PROJECT_DIR$/src/test/java/org/nlpir/lucene/cn/ictclas/ReadProperties.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="lucene-analyzers-nlpir-ictclas" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="lucene-analyzers-nlpir-ictclas" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="lucene-analyzers-nlpir-ictclas" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="1092" />
+    <option name="y" value="77" />
+    <option name="width" value="993" />
+    <option name="height" value="538" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="lucene-analyzers-nlpir-ictclas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nlpir-analysis-cn-ictclas" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lucene-analyzers-nlpir-ictclas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nlpir-analysis-cn-ictclas" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lucene-analyzers-nlpir-ictclas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nlpir-analysis-cn-ictclas" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lucene-analyzers-nlpir-ictclas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nlpir-analysis-cn-ictclas" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lucene-analyzers-nlpir-ictclas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Users\nlpir-analysis-cn-ictclas\resources" />
+      <recent name="D:\Users\nlpir-analysis-cn-ictclas\src\test\resources" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="ReadProperties" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.nlpir.lucene.cn.ictclas.ReadProperties" />
+      <module name="lucene-analyzers-nlpir-ictclas" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.nlpir.lucene.cn.ictclas.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ReadProperties" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ced671b0-e45c-45fa-9ac3-cf8bb7b4398b" name="Default" comment="" />
+      <created>1584349364049</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584349364049</updated>
+      <workItem from="1584349365522" duration="11123000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="11123000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info id="Image Layers" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" visible="true" weight="0.20174263" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3366619" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info id="Capture Tool" />
+      <window_info id="Designer" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24865952" />
+      <window_info anchor="right" id="Database" weight="0.3297587" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.338/NLPIRTokenizerAnalyzer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="29" column="71" selection-start-line="29" selection-start-column="71" selection-end-line="29" selection-end-column="71" />
+          <folding>
+            <element signature="e#0#1102#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="method#NLPIRTokenizerAnalyzer#0;class#NLPIRTokenizerAnalyzer#0" expanded="true" />
+            <element signature="method#createComponents#0;class#NLPIRTokenizerAnalyzer#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/lucene/lucene-core/8.4.1/lucene-core-8.4.1.jar!/org/apache/lucene/analysis/Tokenizer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/lucene/lucene-analyzers-common/8.4.1/lucene-analyzers-common-8.4.1.jar!/org/apache/lucene/analysis/util/TokenizerFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="41" column="29" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
+          <folding>
+            <element signature="n#build#0;n#project#0;n#!!top" expanded="true" />
+            <element signature="n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="true" />
+            <element signature="n#plugin#0;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="true" />
+            <element signature="n#configuration#0;n#plugin#0;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="true" />
+            <element signature="n#resources#0;n#build#0;n#project#0;n#!!top" expanded="true" />
+            <element signature="n#resource#0;n#resources#0;n#build#0;n#project#0;n#!!top" expanded="true" />
+            <element signature="n#includes#0;n#resource#0;n#resources#0;n#build#0;n#project#0;n#!!top" expanded="true" />
+            <element signature="n#dependency#0;n#dependencies#0;n#project#0;n#!!top" expanded="true" />
+            <element signature="n#dependency#2;n#dependencies#0;n#project#0;n#!!top" expanded="true" />
+            <element signature="n#dependency#3;n#dependencies#0;n#project#0;n#!!top" expanded="true" />
+            <element signature="n#dependency#4;n#dependencies#0;n#project#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/nlpir/segment/exception/NLPIRException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/nlpir/segment/CNLPIRLibrary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-152">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/nlpir/lucene/cn/ictclas/finersegmet/FinerTokenizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
+          <folding>
+            <element signature="method#FinerTokenizer#0;class#FinerTokenizer#0" expanded="true" />
+            <element signature="docComment;method#defaultInit#0;class#FinerTokenizer#0" expanded="true" />
+            <element signature="method#defaultInit#0;class#FinerTokenizer#0" expanded="true" />
+            <element signature="method#FinerTokenizer#0;class#FinerTokenizer#0" expanded="true" />
+            <element signature="docComment;method#FinerTokenizer#1;class#FinerTokenizer#0" expanded="true" />
+            <element signature="method#FinerTokenizer#1;class#FinerTokenizer#0" expanded="true" />
+            <element signature="docComment;method#FinerTokenizer#2;class#FinerTokenizer#0" expanded="true" />
+            <element signature="method#FinerTokenizer#2;class#FinerTokenizer#0" expanded="true" />
+            <element signature="docComment;method#init#0;class#FinerTokenizer#0" expanded="true" />
+            <element signature="method#init#0;class#FinerTokenizer#0" expanded="true" />
+            <element signature="method#incrementToken#0;class#FinerTokenizer#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/nlpir/lucene/cn/ictclas/NLPIRTokenizerFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#NLPIRTokenizerFactory#0" expanded="true" />
+            <element signature="method#NLPIRTokenizerFactory#0;class#NLPIRTokenizerFactory#0" expanded="true" />
+            <element signature="docComment;method#create#0;class#NLPIRTokenizerFactory#0" expanded="true" />
+            <element signature="method#create#0;class#NLPIRTokenizerFactory#0" expanded="true" />
+            <element signature="e#1041#1042#0" expanded="true" />
+            <element signature="e#1082#1083#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/nlpir/lucene/cn/ictclas/finersegmet/FinerTokenizerAnalyzer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+          <folding>
+            <element signature="method#FinerTokenizerAnalyzer#0;class#FinerTokenizerAnalyzer#0" expanded="true" />
+            <element signature="method#createComponents#0;class#FinerTokenizerAnalyzer#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/nlpir/lucene/cn/ictclas/NLPIRTokenizerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="21" column="60" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#main#0;class#NLPIRTokenizerTest#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/nlpir.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/nlpir/lucene/cn/ictclas/finersegmet/FinerTokenizerFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#create#0;class#FinerTokenizerFactory#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/nlpir/lucene/cn/ictclas/NLPIRTokenizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="53" column="8" selection-start-line="53" selection-start-column="8" selection-end-line="53" selection-end-column="8" />
+          <folding>
+            <element signature="docComment;method#defaultInit#0;class#NLPIRTokenizer#0" expanded="true" />
+            <element signature="method#NLPIRTokenizer#0;class#NLPIRTokenizer#0" expanded="true" />
+            <element signature="docComment;method#NLPIRTokenizer#1;class#NLPIRTokenizer#0" expanded="true" />
+            <element signature="method#NLPIRTokenizer#1;class#NLPIRTokenizer#0" expanded="true" />
+            <element signature="docComment;method#NLPIRTokenizer#2;class#NLPIRTokenizer#0" expanded="true" />
+            <element signature="method#NLPIRTokenizer#2;class#NLPIRTokenizer#0" expanded="true" />
+            <element signature="docComment;method#init#0;class#NLPIRTokenizer#0" expanded="true" />
+            <element signature="method#incrementToken#0;class#NLPIRTokenizer#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/nlpir/lucene/cn/ictclas/ReadProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/Configure.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/nlpir.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/nlpir/lucene/cn/ictclas/NLPIRTokenizerAnalyzer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="24" column="18" lean-forward="true" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#NLPIRTokenizerAnalyzer#0" expanded="true" />
+            <element signature="method#NLPIRTokenizerAnalyzer#0;class#NLPIRTokenizerAnalyzer#0" expanded="true" />
+            <element signature="method#NLPIRTokenizerAnalyzer#0;class#NLPIRTokenizerAnalyzer#0" expanded="true" />
+            <element signature="method#createComponents#0;class#NLPIRTokenizerAnalyzer#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
